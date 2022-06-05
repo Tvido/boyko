@@ -2,4 +2,4 @@
 
 ## [Tvido](https://tvido.github.io/viter-cv/)
 
-![Preview](/preview.png)
+![Preview](/assets/img/main/1.jpeg)
