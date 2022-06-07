@@ -95,8 +95,34 @@ modalCloses.forEach(modalClose => {
   });
 });
 
+/*==================== GALLERY SWIPER  ====================*/
+const swiperGallery = new Swiper('.swiperGallery', {
+  slidesPerView: 'auto',
+  spaceBetween: 40,
+  breakpoints: {
+    568: {
+      spaceBetween: 60,
+    },
+    768: {
+      spaceBetween: 90,
+    },
+  },
+  keyboard: true,
+  centeredSlides: true,
+  grabCursor: true,
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 /*==================== PORTFOLIO SWIPER  ====================*/
-let swiperPortfolio = new Swiper('.portfolio__container', {
+let swiperPortfolio = new Swiper('.swiperPortfolio', {
   cssMode: true,
   loop: true,
   navigation: {

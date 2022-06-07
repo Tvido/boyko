@@ -1,3 +1,15 @@
+/*==================== work ====================*/
+// get items:
+// const langs = document.querySelector('.langs'),
+//   link = document.querySelectorAll('a');
+
+// link.forEach(el => {
+//   el.addEventListener('click', () => {
+//     let attr = el.getAttribute('language');
+//     console.log('attr', attr);
+//   });
+// });
+
 /*==================== TOGGLE LANGUAGE ====================*/
 
 const langs = document.querySelector('.langs'),
@@ -30,17 +42,6 @@ const data = {
   },
 };
 
-/*==================== work ====================*/
-// get items:
-// const langs = document.querySelector('.langs'),
-//   link = document.querySelectorAll('a');
-
-// link.forEach(el => {
-//   el.addEventListener('click', () => {
-//     let attr = el.getAttribute('language');
-//     console.log('attr', attr);
-//   });
-// });
 /*==================== work ====================*/
 
 // const langs = document.querySelector('.langs'),
