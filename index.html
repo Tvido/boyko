@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!--==================== UNICONS ====================-->
-
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
     <!--==================== SWIPER CSS ====================-->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
 
@@ -30,40 +33,38 @@
               <a href="#home" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
               <a href="#preferences" class="nav__link">Preferences</a>
             </li>
             <li class="nav__item">
-              <a href="#qualification" class="nav__link"> Qualification</a>
+              <a href="#qualification" class="nav__link"> Qualifications</a>
             </li>
             <li class="nav__item">
-              <a href="#methods" class="nav__link">Methods</a>
+              <a href="#gallery" class="nav__link">Galleries</a>
             </li>
             <li class="nav__item">
-              <a href="#portfolio" class="nav__link">Portfolio</a>
+              <a href="#testimonial" class="nav__link">Testimonials</a>
             </li>
-            <li class="nav__item">
-              <a href="#testimonial" class="nav__link">Testimonial</a>
-            </li>
-            <li class="nav__item">
-              <a href="#gallery" class="nav__link">Gallery</a>
-            </li>
+
             <li class="nav__item">
               <a href="#contact" class="nav__link">Contact Me</a>
             </li>
           </ul>
           <span class="nav__close">
-            <i class="fa-light fa-xmark nav__close" id="nav-close"></i>
+            <i class="uil uil-times nav__close" id="nav-close"></i>
           </span>
         </div>
 
         <div class="nav__btns">
+          <div class="langs">
+            <a id="US" href="#" language="us" class="us active">US</a>
+            <a id="UA" href="#" language="ua" class="ua">UA</a>
+          </div>
           <i class="ri-moon-line change-theme" id="theme-button"></i>
 
+          <!-- <i class="ua-lang toggle-lang" id="language-button">UA</i> -->
+
           <div class="nav__toggle" id="nav-toggle">
-            <i class="fa-brands fa-microsoft"></i>
+            <i class="uil uil-draggabledots"></i>
           </div>
         </div>
       </nav>
@@ -80,13 +81,13 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 class="home__social-icon"
-                ><i class="fa-brands fa-instagram"></i
+                ><i class="uil uil-instagram"></i
               ></a>
               <a
                 href="https://www.facebook.com/"
                 target="_blank"
                 class="home__social-icon"
-                ><i class="fa-brands fa-facebook-square"></i
+                ><i class="uil uil-facebook"></i
               ></a>
             </div>
 
@@ -118,56 +119,35 @@
             </div>
 
             <div class="home__data">
-              <h1 class="home__title">Author</h1>
-              <h3 class="home__subtitle">Photographer</h3>
+              <h1 class="home__title lng-name">Myroslava</h1>
+              <h3 class="home__subtitle lng-subtitle">Photographer</h3>
               <p class="home__description">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Commodi, ipsa!
               </p>
-              <a href="#" class="button button--flex">Click Me</a>
-            </div>
-          </div>
-        </div>
-      </section>
+              <div class="about__info">
+                <div class="">
+                  <span class="about__info-title">6+</span>
+                  <span class="about__info-name">Years <br />experience</span>
+                </div>
+                <div class="">
+                  <span class="about__info-title">1200+</span>
+                  <span class="about__info-name"
+                    >Completed <br />
+                    project</span
+                  >
+                </div>
+                <div class="">
+                  <span class="about__info-title">20+</span>
+                  <span class="about__info-name"
+                    >Compilations <br />
+                    done</span
+                  >
+                </div>
+              </div>
 
-      <!--==================== ABOUT ====================-->
-      <section class="about section" id="about">
-        <h2 class="section__title">INFO</h2>
-        <span class="section__subtitle">Aboute Me</span>
-
-        <div class="about__container container grid">
-          <img src="assets/img/main/1.jpeg" alt="img" class="about__img" />
-          <div class="about__data">
-            <p class="about__description">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-              architecto vitae voluptatum iure natus harum necessitatibus libero
-              rem voluptate aspernatur?
-            </p>
-            <div class="about__info">
-              <div class="">
-                <span class="about__info-title">5+</span>
-                <span class="about__info-name">Years <br />experience</span>
-              </div>
-              <div class="">
-                <span class="about__info-title">120+</span>
-                <span class="about__info-name"
-                  >Completed <br />
-                  project</span
-                >
-              </div>
-              <div class="">
-                <span class="about__info-title">20+</span>
-                <span class="about__info-name"
-                  >Compilations <br />
-                  done</span
-                >
-              </div>
+              <!-- <a href="#" class="button button--flex">Click Me</a> -->
             </div>
-            <!-- <div class="about__buttons">
-              <a href="#" class="button button--flex"
-                >click<i class="fa-solid fa-house-crack button__icon"></i
-              ></a>
-            </div> -->
           </div>
         </div>
       </section>
@@ -392,11 +372,15 @@
               <div class="qualification__data">
                 <div>
                   <h3 class="qualification__title">Photo</h3>
-                  <span class="qualification__subtitle">Some text</span>
-                  <div class="qualification__calendar">
+                  <span class="qualification__subtitle"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores placeat eum dignissimos earum adipisci dolore alias
+                    omnis?</span
+                  >
+                  <!-- <div class="qualification__calendar">
                     <i class="fa-thin fa-chart-line qualification__icon"></i>
                     2020 - 2021
-                  </div>
+                  </div> -->
                 </div>
 
                 <div>
@@ -416,11 +400,15 @@
 
                 <div>
                   <h3 class="qualification__title">Video</h3>
-                  <span class="qualification__subtitle">Some text</span>
-                  <div class="qualification__calendar">
+                  <span class="qualification__subtitle"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores placeat eum dignissimos earum adipisci dolore alias
+                    omnis?</span
+                  >
+                  <!-- <div class="qualification__calendar">
                     <i class="fa-thin fa-chart-line qualification__icon"></i>
                     2021 - 2022
-                  </div>
+                  </div> -->
                 </div>
               </div>
 
@@ -428,11 +416,15 @@
               <div class="qualification__data">
                 <div>
                   <h3 class="qualification__title">Audio</h3>
-                  <span class="qualification__subtitle">Some text</span>
-                  <div class="qualification__calendar">
+                  <span class="qualification__subtitle"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores placeat eum dignissimos earum adipisci dolore alias
+                    omnis?</span
+                  >
+                  <!-- <div class="qualification__calendar">
                     <i class="fa-thin fa-chart-line qualification__icon"></i>
                     2022 - 2022
-                  </div>
+                  </div> -->
                 </div>
 
                 <div>
@@ -452,11 +444,15 @@
 
                 <div>
                   <h3 class="qualification__title">Untitled</h3>
-                  <span class="qualification__subtitle">Some text</span>
-                  <div class="qualification__calendar">
+                  <span class="qualification__subtitle"
+                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Maiores placeat eum dignissimos earum adipisci dolore alias
+                    omnis?</span
+                  >
+                  <!-- <div class="qualification__calendar">
                     <i class="fa-thin fa-chart-line qualification__icon"></i>
                     2022 - 2022
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
@@ -466,12 +462,70 @@
               <!--==================== QUALIFICATION 1 ====================-->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Photo</h3>
-                  <span class="qualification__subtitle"
-                    >Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maiores placeat eum dignissimos earum adipisci dolore alias
-                    omnis?</span
-                  >
+                  <div class="methods__content">
+                    <div>
+                      <i class="uil uil-comment-info methods__icon"></i>
+                      <h3 class="methods__title">
+                        Lorem <br />
+                        lorem text
+                      </h3>
+                    </div>
+                    <span
+                      class="button button--flex button--small button--link methods__button"
+                      >Show<i class="uil uil-angle-right button__icon"></i>
+                    </span>
+
+                    <div class="methods__modal">
+                      <div class="methods__modal-content">
+                        <h4 class="methods__modal-title">
+                          Lorem <br />
+                          lorem text
+                        </h4>
+                        <i
+                          class="uil uil-times-circle methods__modal-close"
+                        ></i>
+
+                        <ul class="methods__modal-services grid">
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div>
@@ -490,256 +544,323 @@
                 </div>
 
                 <div>
-                  <h3 class="qualification__title">Video</h3>
-                  <span class="qualification__subtitle"
-                    >orem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maiores placeat eum dignissimos earum adipisci dolore alias
-                    omnis?</span
-                  >
+                  <div class="methods__content">
+                    <div>
+                      <i class="uil uil-comment-info methods__icon"></i>
+                      <h3 class="methods__title">
+                        Lorem <br />
+                        lorem text
+                      </h3>
+                    </div>
+                    <span
+                      class="button button--flex button--small button--link methods__button"
+                      >Show<i class="uil uil-angle-right button__icon"></i>
+                    </span>
+
+                    <div class="methods__modal">
+                      <div class="methods__modal-content">
+                        <h4 class="methods__modal-title">
+                          Lorem <br />
+                          lorem text
+                        </h4>
+                        <i
+                          class="uil uil-times-circle methods__modal-close"
+                        ></i>
+
+                        <ul class="methods__modal-services grid">
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <!-- <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div> -->
               </div>
+
+              <!-- <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+
+                <div class="methods__content">
+                  <div>
+                    <i class="uil uil-comment-info methods__icon"></i>
+                    <h3 class="methods__title">
+                      Lorem <br />
+                      lorem text
+                    </h3>
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link methods__button"
+                      >Show<i class="uil uil-angle-right button__icon"></i>
+
+                  <div class="methods__modal">
+                    <div class="methods__modal-content">
+                      <h4 class="methods__modal-title">
+                        Lorem <br />
+                        lorem text
+                      </h4>
+                      <i class="methods__modal-close">X</i>
+
+                      <ul class="methods__modal-services grid">
+                        <li class="methods__modal-service">
+                          <i
+                            class="fa-thin fa-circle-notch methods__modal-icon"
+                          ></i>
+                          <p>
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet.
+                          </p>
+                        </li>
+                        <li class="methods__modal-service">
+                          <i
+                            class="fa-thin fa-circle-notch methods__modal-icon"
+                          ></i>
+                          <p>
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet.
+                          </p>
+                        </li>
+                        <li class="methods__modal-service">
+                          <i
+                            class="fa-thin fa-circle-notch methods__modal-icon"
+                          ></i>
+                          <p>
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet.
+                          </p>
+                        </li>
+                        <li class="methods__modal-service">
+                          <i
+                            class="fa-thin fa-circle-notch methods__modal-icon"
+                          ></i>
+                          <p>
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
 
               <!--==================== QUALIFICATION 3 ====================-->
               <div class="qualification__data">
                 <div>
-                  <h3 class="qualification__title">Audio</h3>
-                  <span class="qualification__subtitle"
-                    >orem ipsum dolor sit amet consectetur adipisicing elit.
-                    Maiores placeat eum dignissimos earum adipisci dolore alias
-                    omnis?</span
-                  >
+                  <div class="methods__content">
+                    <div>
+                      <i class="uil uil-comment-info methods__icon"></i>
+                      <h3 class="methods__title">
+                        Lorem <br />
+                        lorem text
+                      </h3>
+                    </div>
+                    <span
+                      class="button button--flex button--small button--link methods__button"
+                      >Show<i class="uil uil-angle-right button__icon"></i>
+                    </span>
+
+                    <div class="methods__modal">
+                      <div class="methods__modal-content">
+                        <h4 class="methods__modal-title">
+                          Lorem <br />
+                          lorem text
+                        </h4>
+                        <i
+                          class="uil uil-times-circle methods__modal-close"
+                        ></i>
+
+                        <ul class="methods__modal-services grid">
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                          <li class="methods__modal-service">
+                            <i
+                              class="fa-thin fa-circle-notch methods__modal-icon"
+                            ></i>
+                            <p>
+                              Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                              amet.
+                            </p>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div>
                   <span class="qualification__rounder"></span>
-                  <!-- <span class="qualification__line"></span> -->
+                  <span class="qualification__line"></span>
                 </div>
               </div>
+
+              <!-- <div class="qualification__data">
+                <div class="methods__content">
+                  <div>
+                    <i class="uil uil-comment-info methods__icon"></i>
+                    <h3 class="methods__title">
+                      Lorem <br />
+                      lorem text
+                    </h3>
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link methods__button"
+                      >Show<i class="uil uil-angle-right button__icon"></i>
+
+                  <div class="methods__modal">
+                    <div class="methods__modal-content">
+                      <h4 class="methods__modal-title">
+                        Lorem <br />
+                        lorem text
+                      </h4>
+                      <i class="methods__modal-close">X</i>
+
+                      <ul class="methods__modal-services grid">
+                        <li class="methods__modal-service">
+                          <i
+                            class="fa-thin fa-circle-notch methods__modal-icon"
+                          ></i>
+                          <p>
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet.
+                          </p>
+                        </li>
+                        <li class="methods__modal-service">
+                          <i
+                            class="fa-thin fa-circle-notch methods__modal-icon"
+                          ></i>
+                          <p>
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet.
+                          </p>
+                        </li>
+                        <li class="methods__modal-service">
+                          <i
+                            class="fa-thin fa-circle-notch methods__modal-icon"
+                          ></i>
+                          <p>
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet.
+                          </p>
+                        </li>
+                        <li class="methods__modal-service">
+                          <i
+                            class="fa-thin fa-circle-notch methods__modal-icon"
+                          ></i>
+                          <p>
+                            Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
+                            amet.
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                </div>
+              </div> -->
             </div>
           </div>
         </div>
       </section>
 
-      <!--==================== METHODS ====================-->
-      <section class="methods section" id="methods">
-        <h2 class="section__title">METHODS</h2>
-        <span class="section__subtitle">Lorem, ipsum dolor.</span>
-
-        <div class="methods__container container grid">
-          <!--==================== METHOD 1 ====================-->
-          <div class="methods__content">
-            <div>
-              <i class="methods__icon">M</i>
-              <h3 class="methods__title">
-                Lorem <br />
-                lorem text
-              </h3>
+      <!--==================== GALLERY ====================-->
+      <section class="gallery section" id="gallery">
+        <div class="gallery__bg">
+          <div class="gallery__container container grid">
+            <div class="gallery__data">
+              <h2 class="section__title">GALLERIES</h2>
+              <!-- <span class="section__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Sapiente, perferendis.
+              </span> -->
+              <!-- <a href="#contacts" class="button button--flex">Contact Me</a> -->
             </div>
-            <span
-              class="button button--flex button--small button--link methods__button"
-              >Show <i class="button__icon">i</i></span
-            >
-
-            <div class="methods__modal">
-              <div class="methods__modal-content">
-                <h4 class="methods__modal-title">
-                  Lorem <br />
-                  lorem text
-                </h4>
-                <i class="methods__modal-close">X</i>
-
-                <ul class="methods__modal-services grid">
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!--==================== METHOD 2 ====================-->
-          <div class="methods__content">
-            <div>
-              <i class="methods__icon">M</i>
-              <h3 class="methods__title">
-                Lorem <br />
-                lorem text
-              </h3>
-            </div>
-            <span
-              class="button button--flex button--small button--link methods__button"
-              >Show <i class="button__icon">i</i></span
-            >
-
-            <div class="methods__modal">
-              <div class="methods__modal-content">
-                <h4 class="methods__modal-title">
-                  Lorem <br />
-                  lorem text
-                </h4>
-                <i class="methods__modal-close">X</i>
-
-                <ul class="methods__modal-services grid">
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!--==================== METHOD 3 ====================-->
-          <div class="methods__content">
-            <div>
-              <i class="methods__icon">M</i>
-              <h3 class="methods__title">
-                Lorem <br />
-                lorem text
-              </h3>
-            </div>
-            <span
-              class="button button--flex button--small button--link methods__button"
-              >Show <i class="button__icon">i</i></span
-            >
-
-            <div class="methods__modal">
-              <div class="methods__modal-content">
-                <h4 class="methods__modal-title">
-                  Lorem <br />
-                  lorem text
-                </h4>
-                <i class="methods__modal-close">X</i>
-
-                <ul class="methods__modal-services grid">
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <!--==================== METHOD 4 ====================-->
-          <div class="methods__content">
-            <div>
-              <i class="methods__icon">M</i>
-              <h3 class="methods__title">
-                Lorem <br />
-                lorem text
-              </h3>
-            </div>
-            <span
-              class="button button--flex button--small button--link methods__button"
-              >Show <i class="button__icon">i</i></span
-            >
-
-            <div class="methods__modal">
-              <div class="methods__modal-content">
-                <h4 class="methods__modal-title">
-                  Lorem <br />
-                  lorem text
-                </h4>
-                <i class="methods__modal-close">X</i>
-
-                <ul class="methods__modal-services grid">
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                  <li class="methods__modal-service">
-                    <i class="fa-thin fa-circle-notch methods__modal-icon"></i>
-                    <p>
-                      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.
-                    </p>
-                  </li>
-                </ul>
-              </div>
+            <div class="gallery">
+              <img
+                src="assets/img/main/1.jpeg"
+                alt="img"
+                class="project__img"
+              />
             </div>
           </div>
         </div>
       </section>
 
       <!--==================== PORTFOLIO ====================-->
-      <section class="portfolio section" id="portfolio">
-        <h2 class="section__title">PORTFOLIO</h2>
-        <span class="section__subtitle">My works</span>
+      <section class="portfolio section">
+        <!-- <h2 class="section__title">PORTFOLIO</h2>
+        <span class="section__subtitle">My works</span> -->
 
         <div class="portfolio__container container swiper mySwiper">
           <div class="swiper-wrapper">
@@ -953,49 +1074,6 @@
           <div class="swiper-pagination swiper-pagination-testimonial"></div>
         </div>
       </section>
-
-      <!--==================== GALLERY ====================-->
-      <section class="gallery section" id="gallery">
-        <div class="gallery__bg">
-          <div class="gallery__container container grid">
-            <div class="gallery__data">
-              <h2 class="section__title">GALLERY</h2>
-              <span class="section__subtitle">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Sapiente, perferendis.
-              </span>
-              <!-- <a href="#contacts" class="button button--flex">Contact Me</a> -->
-            </div>
-            <div class="gallery">
-              <img
-                src="assets/img/main/1.jpeg"
-                alt="img"
-                class="project__img"
-              />
-              <img
-                src="assets/img/main/1.jpeg"
-                alt="img"
-                class="project__img"
-              />
-              <img
-                src="assets/img/main/1.jpeg"
-                alt="img"
-                class="project__img"
-              />
-              <img
-                src="assets/img/main/1.jpeg"
-                alt="img"
-                class="project__img"
-              />
-              <img
-                src="assets/img/main/1.jpeg"
-                alt="img"
-                class="project__img"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
       <!--==================== CONTACTS ====================-->
       <section class="contact section" id="contact">
         <h2 class="section__title">CONTACTS</h2>
@@ -1037,7 +1115,7 @@
                   autocomplete="off"
                   placeholder=" "
                   class="contact__input"
-                  data-reg="^[А-ЯЁійї][а-яёійї][A-Z][a-z]*$"
+                  data-reg=""
                 />
                 <label for="formName" class="contact__label">Світлана</label>
               </div>
@@ -1091,7 +1169,7 @@
 
             <div class="">
               <a type="submit" id="button" href="#" class="button button--flex"
-                >НАДІСЛАТИ<i class="ri-arrow-right-up-line button__icon"></i
+                >НАДІСЛАТИ<i class="uil uil-envelope-check"></i
               ></a>
             </div>
           </form>
@@ -1111,37 +1189,26 @@
                 href="https://www.instagram.com/"
                 target="_blank"
                 class="footer__link"
-                ><i class="fa-brands fa-instagram"></i
+                ><i class="uil uil-instagram"></i
               ></a>
               <a
                 href="https://www.instagram.com/"
                 target="_blank"
                 class="footer__link"
-                ><i class="fa-brands fa-facebook-square"></i
+                ><i class="uil uil-facebook"></i
               ></a>
             </div>
           </div>
 
           <ul class="footer__links">
-            <li><a href="#" class="footer__link">Section One</a></li>
-            <li><a href="#" class="footer__link">Section Two</a></li>
-            <li><a href="#" class="footer__link">Section Three</a></li>
+            <li>
+              <a href="#qualification" class="footer__link">Qualifications</a>
+            </li>
+            <li><a href="#gallery" class="footer__link">Galleries</a></li>
+            <li>
+              <a href="#testimonial" class="footer__link">Testimonials</a>
+            </li>
           </ul>
-
-          <!-- <div class="footer__social">
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              class="footer__link"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.instagram.com/"
-              target="_blank"
-              class="footer__link"
-              ><i class="fa-brands fa-facebook-square"></i
-            ></a>
-          </div> -->
         </div>
 
         <p class="footer__copy">
@@ -1166,11 +1233,8 @@
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/form.js"></script>
+    <script src="assets/js/langs.js"></script>
 
     <!--==================== FONTAWESOME ====================-->
-    <script
-      src="https://kit.fontawesome.com/ac72aedf2c.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
