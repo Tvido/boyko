@@ -696,8 +696,15 @@ img {
 }
 
 /*==================== GALLERY ====================*/
+/* .gallery {
+  max-width: 768px;
+  overflow: hidden;
+} */
+
 .gallery__container {
   overflow: initial;
+  /* max-width: 768px; */
+
   height: 200px;
   margin-top: 5rem;
 }
