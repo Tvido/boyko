@@ -51,7 +51,11 @@ qualification4 = document.querySelector('.qualification4');
 
 // footer
 footer__title = document.querySelector('.footer__title');
-home__subtitle = document.querySelector('.footer__subtitle');
+footer__subtitle = document.querySelector('.footer__subtitle');
+
+footer__approaches = document.querySelector('.footer__approaches');
+footer__galleries = document.querySelector('.footer__galleries');
+footer__testimonials = document.querySelector('.footer__testimonials');
 
 link.forEach(el => {
   el.addEventListener('click', () => {
@@ -109,6 +113,10 @@ link.forEach(el => {
     // footer
     footer__title.textContent = data[attr].footer__title;
     footer__subtitle.textContent = data[attr].footer__subtitle;
+
+    footer__approaches.textContent = data[attr].footer__approaches;
+    footer__galleries.textContent = data[attr].footer__galleries;
+    footer__testimonials.textContent = data[attr].footer__testimonials;
   });
 });
 
@@ -168,6 +176,10 @@ const data = {
     // footer
     footer__title: 'Myroslava',
     footer__subtitle: 'Photographer',
+
+    footer__approaches: 'Approaches',
+    footer__galleries: 'Galleries',
+    footer__testimonials: 'Testimonials',
   },
 
   ua: {
@@ -229,5 +241,9 @@ const data = {
     // footer
     footer__title: 'Мирослава',
     footer__subtitle: 'Фотограф',
+
+    footer__approaches: 'Підходи до роботи',
+    footer__galleries: 'Галереї',
+    footer__testimonials: 'Відгуки',
   },
 };

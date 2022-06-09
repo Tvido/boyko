@@ -73,27 +73,27 @@ tabs.forEach(tab => {
 
 /*==================== SERVICES MODAL ====================*/
 
-const modalViews = document.querySelectorAll('.methods__modal'),
-  modalButtons = document.querySelectorAll('.methods__button'),
-  modalCloses = document.querySelectorAll('.methods__modal-close');
+// const modalViews = document.querySelectorAll('.methods__modal'),
+//   modalButtons = document.querySelectorAll('.methods__button'),
+//   modalCloses = document.querySelectorAll('.methods__modal-close');
 
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add('active-modal');
-};
+// let modal = function (modalClick) {
+//   modalViews[modalClick].classList.add('active-modal');
+// };
 
-modalButtons.forEach((modalButn, i) => {
-  modalButn.addEventListener('click', () => {
-    modal(i);
-  });
-});
+// modalButtons.forEach((modalButn, i) => {
+//   modalButn.addEventListener('click', () => {
+//     modal(i);
+//   });
+// });
 
-modalCloses.forEach(modalClose => {
-  modalClose.addEventListener('click', () => {
-    modalViews.forEach(modalView => {
-      modalView.classList.remove('active-modal');
-    });
-  });
-});
+// modalCloses.forEach(modalClose => {
+//   modalClose.addEventListener('click', () => {
+//     modalViews.forEach(modalView => {
+//       modalView.classList.remove('active-modal');
+//     });
+//   });
+// });
 
 /*==================== GALLERY SWIPER  ====================*/
 let swiperGallery = new Swiper('.swiperGallery', {
@@ -102,27 +102,27 @@ let swiperGallery = new Swiper('.swiperGallery', {
   grabCursor: true,
   breakpoints: {
     280: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.2,
       spaceBetween: 10,
     },
     480: {
-      slidesPerView: 2,
-      spaceBetween: 20,
+      slidesPerView: 1.3,
+      spaceBetween: 15,
     },
     640: {
-      slidesPerView: 2.1,
+      slidesPerView: 1.4,
       spaceBetween: 20,
     },
     768: {
-      slidesPerView: 2.2,
-      spaceBetween: 40,
+      slidesPerView: 1.5,
+      spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 2.5,
-      spaceBetween: 50,
+      slidesPerView: 1.6,
+      spaceBetween: 10,
     },
   },
-  keyboard: true,
+  // keyboard: true,
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
