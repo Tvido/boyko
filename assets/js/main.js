@@ -96,35 +96,42 @@ modalCloses.forEach(modalClose => {
 });
 
 /*==================== GALLERY SWIPER  ====================*/
-const swiperGallery = new Swiper('.swiperGallery', {
-  slidesPerView: 'auto',
-  spaceBetween: 40,
+let swiperGallery = new Swiper('.swiperGallery', {
+  loop: true,
+  centeredSlides: true,
+  grabCursor: true,
   breakpoints: {
-    568: {
-      spaceBetween: 60,
+    280: {
+      slidesPerView: 1.5,
+      spaceBetween: 10,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    640: {
+      slidesPerView: 2.1,
+      spaceBetween: 20,
     },
     768: {
-      spaceBetween: 90,
+      slidesPerView: 2.2,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 2.5,
+      spaceBetween: 50,
     },
   },
   keyboard: true,
-  centeredSlides: true,
-  grabCursor: true,
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 });
 
 /*==================== PORTFOLIO SWIPER  ====================*/
 let swiperPortfolio = new Swiper('.swiperPortfolio', {
   cssMode: true,
   loop: true,
+  slidesPerView: 'auto',
+  grabCursor: true,
+
   navigation: {
     prevEl: '.swiper-button-prev',
     nextEl: '.swiper-button-next',

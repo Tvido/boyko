@@ -1,36 +1,27 @@
 const data = {
-  // menu:
+  // nav-menu:
   home: {
     us: 'Home',
     ua: 'Домашня',
   },
-  preferences: {
-    us: 'Preferences',
-    ua: 'Домашня',
+  genres: {
+    us: 'Genres',
+    ua: 'Жанри',
   },
-  qualifications: {
-    us: 'Qualifications',
-    ua: 'Домашня',
+  methods: {
+    us: 'Methods',
+    ua: 'Методи',
   },
   galleries: {
     us: 'Galleries',
-    ua: 'Домашня',
+    ua: 'Галереї',
   },
   testimonials: {
     us: 'Testimonials',
-    ua: 'Домашня',
+    ua: 'Відгуки',
   },
-  qualifications: {
+  contactme: {
     us: 'Contact Me',
-    ua: 'Домашня',
+    ua: 'Мої контакти',
   },
 };
-
-// name: {
-//   us: 'Myroslava',
-//   ua: 'Мирослава',
-// },
-// subtitle: {
-//   us: 'MyroslavaMyroslavaMyroslavaMyroslavaMyroslavaMyroslavaMyroslava',
-//   ua: 'МирославаМирославаМирославаМирославаМирославаМирославаМирослава',
-// },

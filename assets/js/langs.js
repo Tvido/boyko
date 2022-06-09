@@ -14,8 +14,8 @@
 
 const langs = document.querySelector('.langs'),
   link = document.querySelectorAll('a'),
-  name = document.querySelector('.home__title'),
-  description = document.querySelector('.home__description');
+  home = document.querySelector('.home'),
+  genres = document.querySelector('.genres');
 
 link.forEach(el => {
   el.addEventListener('click', () => {
@@ -24,21 +24,19 @@ link.forEach(el => {
 
     let attr = el.getAttribute('language');
 
-    name.textContent = data[attr].name;
-    description.textContent = data[attr].description;
+    home.textContent = data[attr].home;
+    genres.textContent = data[attr].genres;
   });
 });
 
 const data = {
   us: {
-    name: 'Myroslava',
-    description:
-      'Since February 20, 2014, Ukraine has been defending itself against the armed invasion of the Russian Federation, which includes the annexation of Crimea and the occupation of Donetsk and Luhansk regions. The new stage of the Russian-Ukrainian war began on February 24, 2022 with a large-scale Russian invasion of Ukraine.',
+    home: 'Home',
+    genres: 'Genres',
   },
   ua: {
-    name: 'Мирослава',
-    description:
-      'З 20 лютого 2014 року Україна захищається від збройного вторгнення Російської Федерації, складовими якого є анексія Криму та окупація частини Донецької та Луганської областей. Новий етап російсько-української війни розпочався 24 лютого 2022 року з широкомасштабним російським вторгненням в Україну.',
+    home: 'Домашня',
+    genres: 'Жанри',
   },
 };
 
@@ -49,12 +47,25 @@ const data = {
 
 // link.forEach(el => {
 //   el.addEventListener('click', () => {
-//     langs.querySelector('.active').classList.remove('active');
-//     el.classList.add('active');
-//     let attr = el.getAttribute('language');
-//     console.log('attr', attr);
+//     if ('active') {
+//       langs.querySelector('.active').classList.remove('active');
+//       el.classList.add('active');
+//       let lang = el.getAttribute('language');
 
-//     location.href = window.location.pathname + '#' + attr;
-//     // location.reload();
+//       const path = window.location.pathname;
+
+//       // location.href = window.location.pathname + '#' + attr;
+//       location.href = `${path}#${lang}`;
+
+//       location.reload();
+//     }
 //   });
 // });
+
+// function changeLanguage() {
+//   let hash = window.location.hash;
+//   hash = hash.substring(1);
+//   console.log('hash', hash);
+// }
+
+// changeLanguage();

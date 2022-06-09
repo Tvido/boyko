@@ -30,23 +30,24 @@
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list grid">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+              <a href="#home" class="nav__link active-link home">Home</a>
             </li>
             <li class="nav__item">
-              <a href="#preferences" class="nav__link">Preferences</a>
+              <a href="#preferences" class="nav__link genres">Genres</a>
             </li>
             <li class="nav__item">
-              <a href="#qualification" class="nav__link"> Qualifications</a>
+              <a href="#qualification" class="nav__link methods">Methods</a>
             </li>
             <li class="nav__item">
-              <a href="#gallery" class="nav__link">Galleries</a>
+              <a href="#gallery" class="nav__link galleries">Galleries</a>
             </li>
             <li class="nav__item">
-              <a href="#testimonial" class="nav__link">Testimonials</a>
+              <a href="#testimonial" class="nav__link testimonials"
+                >Testimonials</a
+              >
             </li>
-
             <li class="nav__item">
-              <a href="#contact" class="nav__link">Contact Me</a>
+              <a href="#contact" class="nav__link contactme">Contact Me</a>
             </li>
           </ul>
           <span class="nav__close">
@@ -117,8 +118,8 @@
             </div>
 
             <div class="home__data">
-              <h1 class="home__title lng-name">Myroslava</h1>
-              <h3 class="home__subtitle lng-subtitle">Photographer</h3>
+              <h1 class="home__title">Myroslava</h1>
+              <h3 class="home__subtitle">Photographer</h3>
               <p class="home__description">
                 Since February 20, 2014, Ukraine has been defending itself
                 against the armed invasion of the Russian Federation, which
@@ -621,38 +622,62 @@
         </div>
       </section>
 
+      <!-- <img src="assets/img/main/gallery/3.jpeg" class="gallery__img" /> -->
       <!--==================== GALLERY ====================-->
+      <!-- <section class="gallery section" id="gallery"> -->
       <section class="gallery section" id="gallery">
         <h2 class="section__title">GALLERIES</h2>
 
-        <div class="gallery__container swiper swiperGallery">
+        <div class="gallery__container container swiper swiperGallery">
           <div class="swiper-wrapper">
-            <div class="grid swiper-slide">
+            <div class="gallery__content swiper-slide" data-name="gallery-1">
               <img
-                src="assets/img/main/1.jpeg"
+                src="assets/img/main/gallery/3.jpeg"
                 alt="img"
-                class="project__img"
+                class="gallery__img"
               />
             </div>
 
-            <!-- <div class="grid swiper-slide grid">
+            <div class="gallery__content swiper-slide" data-name="gallery-1">
               <img
-                src="assets/img/main/1.jpeg"
+                src="assets/img/main/gallery/3.jpeg"
                 alt="img"
-                class="project__img"
+                class="gallery__img"
               />
             </div>
 
-            <div class="grid swiper-slide grid">
+            <div class="gallery__content swiper-slide" data-name="gallery-1">
               <img
-                src="assets/img/main/1.jpeg"
+                src="assets/img/main/gallery/3.jpeg"
                 alt="img"
-                class="project__img"
+                class="gallery__img"
               />
-            </div> -->
+            </div>
+
+            <div class="gallery__content swiper-slide" data-name="gallery-1">
+              <img
+                src="assets/img/main/gallery/3.jpeg"
+                alt="img"
+                class="gallery__img"
+              />
+            </div>
+
+            <div class="gallery__content swiper-slide" data-name="gallery-1">
+              <img
+                src="assets/img/main/gallery/3.jpeg"
+                alt="img"
+                class="gallery__img"
+              />
+            </div>
+
+            <div class="gallery__content swiper-slide" data-name="gallery-1">
+              <img
+                src="assets/img/main/gallery/3.jpeg"
+                alt="img"
+                class="gallery__img"
+              />
+            </div>
           </div>
-
-          <div class="swiper-pagination"></div>
         </div>
       </section>
 
@@ -1030,6 +1055,7 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/form.js"></script>
     <script src="assets/js/langs.js"></script>
+    <!-- <script src="assets/js/data.js"></script> -->
 
     <!--==================== FONTAWESOME ====================-->
   </body>
