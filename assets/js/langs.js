@@ -134,7 +134,7 @@ const data = {
     home__title: 'Myroslava',
     home__subtitle: 'Photographer',
     home__description:
-      'Photography captures eternity, is proof that everything is only a brief moment in the eyes of eternity. In my photos, I want to convey the authenticity of this moment, the feeling of this moment, because this time is already history!',
+      'Photography captures eternity, this is proof that everything is only a brief moment in the eyes of eternity. In my photos I want to show the authenticity of this moment, the feeling of this moment, because this time is already history!',
     experience: 'Years experience',
     projects: 'Completed projects',
     compilations: 'Compilations done',
@@ -146,32 +146,36 @@ const data = {
     genres__subtitle3: 'Subject session',
     genres__subtitle4: "Author's project",
     genres__text1:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Alias numquam atque vitae doloribus quos nam tempore quod culpa! A, sint!',
+      'Portrait is a story that represents the external accounting, and through it the inner world of a particular character, in the plastic forms of lines and colors of a living face',
     genres__text2:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Alias numquam atque vitae doloribus quos nam tempore quod culpa! A, sint!',
+      'Street photography is a combination of special moments in the space of the environment, photography tends to one emotion - to capture the decisive moment',
     genres__text3:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Alias numquam atque vitae doloribus quos nam tempore quod culpa! A, sint!',
+      'Subject - subject photography requires higher skill as it includes all genres and requires a unique approach, creative thinking and extraordinary solutions',
     genres__text4:
-      'Lorem ipsum dolor, sit amet consectetur adipisicing elit.Alias numquam atque vitae doloribus quos nam tempore quod culpa! A, sint!',
+      "Author's project - the idea of author's photography is to collect and analyze information, create your own opinion, segment your thoughts, approach and attributes, choose the main story, prepare the project for release and work life after the project",
 
     // approaches
     qualification_title: 'Approaches',
 
     // tabs
-    tab1: 'tab1',
-    tab2: 'tab2',
+    tab1: 'tab 1',
+    tab2: 'tab 2',
 
-    qualification__subtitle1: 'Lorem ipsum dolor sit amet consectetur',
-    qualification1: 'Approaches',
+    qualification__subtitle1: 'The approach to building relationships',
+    qualification1:
+      'Motivation of the model and her personal story. Emotions are caused by the author to see the potential of the model to show the potential.',
 
-    qualification__subtitle2: 'Lorem ipsum dolor sit amet consectetur',
-    qualification2: 'Approaches',
+    qualification__subtitle2: 'The approach of the unexpectedness',
+    qualification2:
+      'Reproduction of unique moments in real life. Non-standard vision of the objects of the surrounding world.',
 
-    qualification__subtitle3: 'Lorem ipsum dolor sit amet consectetur',
-    qualification3: 'Approaches',
+    qualification__subtitle3: 'Creative approach',
+    qualification3:
+      'Interesting, versatile presentation and display of the subject. To arouse public interest.',
 
-    qualification__subtitle4: 'Lorem ipsum dolor sit amet consectetur',
-    qualification4: 'Approaches',
+    qualification__subtitle4: "Author's approach",
+    qualification4:
+      'Emphasizing the uniqueness of emotions and beauty, the approach to photography as an art. Investing in a picture of all your thoughts and souls.',
 
     // footer
     footer__title: 'Myroslava',
@@ -219,8 +223,8 @@ const data = {
     qualification_title: 'Підходи до роботи',
 
     // tabs
-    tab1: 'Таба 1',
-    tab2: 'Таба 2',
+    tab1: 'таба 1',
+    tab2: 'таба 2',
 
     qualification__subtitle1: 'Підхід побудови відносин',
     qualification1:
