@@ -953,12 +953,13 @@ img {
 .footer__copy {
   font-size: var(--h3-font-size);
   text-align: center;
-  color: var(--title-color);
+  color: rgb(255, 255, 255);
   margin-top: var(--mb-3);
 }
 
 .footer__copy:hover {
   cursor: pointer;
+  color: var(--first-color-lighter);
 }
 
 .footer__title,
