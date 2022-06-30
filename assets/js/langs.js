@@ -49,6 +49,17 @@ qualification3 = document.querySelector('.qualification3');
 qualification__subtitle4 = document.querySelector('.qualification__subtitle4');
 qualification4 = document.querySelector('.qualification4');
 
+// galleries
+galleries__title = document.querySelector('.galleries__title');
+
+portfolio__title3 = document.querySelector('.portfolio__title3');
+
+// testimonials
+testimonials__title = document.querySelector('.testimonials__title');
+testimonial__description1 = document.querySelector(
+  '.testimonial__description1',
+);
+
 // footer
 footer__title = document.querySelector('.footer__title');
 footer__subtitle = document.querySelector('.footer__subtitle');
@@ -109,6 +120,16 @@ link.forEach(el => {
 
     qualification__subtitle4.textContent = data[attr].qualification__subtitle4;
     qualification4.textContent = data[attr].qualification4;
+
+    // galleries
+    galleries__title.textContent = data[attr].galleries__title;
+    portfolio__title3.textContent = data[attr].portfolio__title3;
+
+    // testimonials
+    testimonials__title.textContent = data[attr].testimonials__title;
+    testimonial__description1.textContent =
+      data[attr].testimonial__description1;
+    console.log('testimonial__description1', testimonial__description1);
 
     // footer
     footer__title.textContent = data[attr].footer__title;
@@ -177,6 +198,14 @@ const data = {
     qualification4:
       'Emphasizing the uniqueness of emotions and beauty, the approach to photography as an art. Investing in a picture of all your thoughts and souls.',
 
+    // galleries
+    galleries__title: 'GALLERIES',
+    portfolio__title3: 'jhjksfhvfhvoierhboihetb',
+
+    // testimonials
+    testimonials__title: 'TESTIMONIALS',
+    testimonial__description1: 'fsvfdbdgbdgbdgb',
+
     // footer
     footer__title: 'Myroslava',
     footer__subtitle: 'Photographer',
@@ -241,6 +270,14 @@ const data = {
     qualification__subtitle4: 'Авторський підхід',
     qualification4:
       'Підкреслення неповторності емоцій і краси, підхід до зйомки як до мистецтва. Вкладання в знімок всіх свої думок та душі.',
+
+    // galleries
+    galleries__title: 'ГАЛЕРЕЇ',
+    portfolio__title3: ' Жінка і вино.',
+
+    // testimonials
+    testimonials__title: 'ВІДГУКИ',
+    testimonial__description1: '8798778798798798',
 
     // footer
     footer__title: 'Мирослава',
