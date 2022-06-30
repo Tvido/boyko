@@ -52,13 +52,8 @@ qualification4 = document.querySelector('.qualification4');
 // galleries
 galleries__title = document.querySelector('.galleries__title');
 
-portfolio__title3 = document.querySelector('.portfolio__title3');
-
-// testimonials
-testimonials__title = document.querySelector('.testimonials__title');
-testimonial__description1 = document.querySelector(
-  '.testimonial__description1',
-);
+// testik
+testimonial__title = document.querySelector('.testimonial__title');
 
 // footer
 footer__title = document.querySelector('.footer__title');
@@ -123,13 +118,9 @@ link.forEach(el => {
 
     // galleries
     galleries__title.textContent = data[attr].galleries__title;
-    portfolio__title3.textContent = data[attr].portfolio__title3;
 
     // testimonials
-    testimonials__title.textContent = data[attr].testimonials__title;
-    testimonial__description1.textContent =
-      data[attr].testimonial__description1;
-    console.log('testimonial__description1', testimonial__description1);
+    testimonial__title.textContent = data[attr].testimonial__title;
 
     // footer
     footer__title.textContent = data[attr].footer__title;
@@ -200,11 +191,9 @@ const data = {
 
     // galleries
     galleries__title: 'GALLERIES',
-    portfolio__title3: 'jhjksfhvfhvoierhboihetb',
 
     // testimonials
-    testimonials__title: 'TESTIMONIALS',
-    testimonial__description1: 'fsvfdbdgbdgbdgb',
+    testimonial__title: 'TESTIMONIALS',
 
     // footer
     footer__title: 'Myroslava',
@@ -273,11 +262,9 @@ const data = {
 
     // galleries
     galleries__title: 'ГАЛЕРЕЇ',
-    portfolio__title3: ' Жінка і вино.',
 
     // testimonials
-    testimonials__title: 'ВІДГУКИ',
-    testimonial__description1: '8798778798798798',
+    testimonial__title: 'ВІДГУКИ',
 
     // footer
     footer__title: 'Мирослава',
