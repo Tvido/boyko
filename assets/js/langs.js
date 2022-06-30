@@ -55,6 +55,15 @@ galleries__title = document.querySelector('.galleries__title');
 // testik
 testimonial__title = document.querySelector('.testimonial__title');
 
+// contact
+contacts__title = document.querySelector('.contacts__title');
+callme = document.querySelector('.callme');
+mailme = document.querySelector('.mailme');
+
+label__name = document.querySelector('.label__name');
+label__message = document.querySelector('.label__message');
+label__button = document.querySelector('.label__button');
+
 // footer
 footer__title = document.querySelector('.footer__title');
 footer__subtitle = document.querySelector('.footer__subtitle');
@@ -121,6 +130,15 @@ link.forEach(el => {
 
     // testimonials
     testimonial__title.textContent = data[attr].testimonial__title;
+
+    // contacts
+    contacts__title.textContent = data[attr].contacts__title;
+    callme.textContent = data[attr].callme;
+    mailme.textContent = data[attr].mailme;
+
+    label__name.textContent = data[attr].label__name;
+    label__message.textContent = data[attr].label__message;
+    label__button.textContent = data[attr].label__button;
 
     // footer
     footer__title.textContent = data[attr].footer__title;
@@ -195,6 +213,15 @@ const data = {
     // testimonials
     testimonial__title: 'TESTIMONIALS',
 
+    // contacts
+    contacts__title: 'CONTACTS',
+    callme: 'Call me',
+    mailme: 'Mail me',
+
+    label__name: 'John',
+    label__message: 'Message',
+    label__button: 'SEND',
+
     // footer
     footer__title: 'Myroslava',
     footer__subtitle: 'Photographer',
@@ -265,6 +292,15 @@ const data = {
 
     // testimonials
     testimonial__title: 'ВІДГУКИ',
+
+    // contacts
+    contacts__title: 'КОНТАКТИ',
+    callme: 'Подзвони мені',
+    mailme: 'Напиши мені',
+
+    label__name: 'Світлана',
+    label__message: 'Повідомлення',
+    label__button: 'НАДІСЛАТИ',
 
     // footer
     footer__title: 'Мирослава',
