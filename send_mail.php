@@ -14,8 +14,8 @@ try {
     $mail->isSMTP();                                            //Send using SMTP
     $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
     $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-    $mail->Username   = 'slavik.zb@gmail.com';                     //SMTP username
-    $mail->Password   = 'hifuycmhctkcduql';                               //SMTP password
+    $mail->Username   = 'bojkomiroslava@gmail.com';                     //SMTP username
+    $mail->Password   = 'pqlprbpmgxrxyvmc';                               //SMTP password
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
     $mail->Port       = 587; 
 
@@ -36,7 +36,7 @@ try {
 
 	$mail->setFrom($email);
 	// $mail->setFrom('photoschool.com.ua', 'Фотошкола');
-    $mail->addAddress("slavik.zb@gmail.com");
+    $mail->addAddress("bojkomiroslava@gmail.com");
     $mail->Subject = "Заявка с сайту [boyko]";
     $mail->MsgHTML($body);
 
